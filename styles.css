@@ -1,0 +1,55 @@
+#headerButtons {
+    text-align: center;
+    width: 100%;
+    background: black;
+}
+
+#main {
+    margin: auto;
+    width: 1495px;
+}
+
+#header {
+    text-align: center;
+    width: 100%;
+    background: black;
+}
+
+#content1 {
+    width: 1495px;
+    height: 400px;
+    color: white;
+    background: #1f1f1f;
+    display: none;
+}
+
+#content2 {
+    width: 1495px;
+    height: 400px;
+    color: white;
+    background: #1f1f1f;
+    display: none;
+}
+
+.button {
+    background-color: #494748;
+    border: none;
+    color: white;
+    width: 295px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+body {
+    background-color: #000000;
+}
