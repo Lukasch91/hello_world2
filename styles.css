@@ -17,7 +17,6 @@
 
 #content1 {
     width: 1495px;
-    height: 400px;
     color: white;
     background: #1f1f1f;
     display: none;
@@ -25,7 +24,27 @@
 
 #content2 {
     width: 1495px;
-    height: 400px;
+    color: white;
+    background: #1f1f1f;
+    display: none;
+}
+
+#content3 {
+    width: 1495px;
+    color: white;
+    background: #1f1f1f;
+    display: none;
+}
+
+#content4 {
+    width: 1495px;
+    color: white;
+    background: #1f1f1f;
+    display: none;
+}
+
+#content5 {
+    width: 1495px;
     color: white;
     background: #1f1f1f;
     display: none;
@@ -52,4 +71,14 @@
 
 body {
     background-color: #000000;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    background: #0e0e0e;
+    text-align: center;
+    padding: 10px;
 }
