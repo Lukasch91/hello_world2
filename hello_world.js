@@ -35,3 +35,9 @@ $(document).ready(function () {
         $("#content4").hide();
     });
 });
+
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#content1").load("http://jsonplaceholder.typicode.com/posts/1");
+    });
+});
