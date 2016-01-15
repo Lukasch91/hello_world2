@@ -1,43 +1,12 @@
 $(document).ready(function () {
-    $("#button1").click(function () {
-        $("#content1").slideToggle("slow");
-        $("#content2").hide();
-        $("#content3").hide();
-        $("#content4").hide();
-        $("#content5").hide();
-    });
-    $("#button2").click(function () {
-        $("#content2").slideToggle("slow");
-        $("#content1").hide();
-        $("#content3").hide();
-        $("#content4").hide();
-        $("#content5").hide();
-    });
-    $("#button3").click(function () {
-        $("#content3").slideToggle("slow");
-        $("#content1").hide();
-        $("#content2").hide();
-        $("#content4").hide();
-        $("#content5").hide();
-    });
-    $("#button4").click(function () {
-        $("#content4").slideToggle("slow");
-        $("#content1").hide();
-        $("#content2").hide();
-        $("#content3").hide();
-        $("#content5").hide();
-    });
-    $("#button5").click(function () {
-        $("#content5").slideToggle("slow");
-        $("#content1").hide();
-        $("#content2").hide();
-        $("#content3").hide();
-        $("#content4").hide();
+    $.ajax({
+        url: "http://jsonplaceholder.typicode.com/albums",
+        method: 'GET'
+    }).then(function (data) {
+        for (i = 0; i <= data.length; i++) {
+            $("#main").append("<div><a href = hello_world2.html?albumid=" + data[i].id + ">" + data[i].title + "</a></div>")
+        }
     });
 });
 
-$(document).ready(function(){
-    $("#button1").click(function(){
-        $("#content1").load("http://jsonplaceholder.typicode.com/posts/1");
-    });
-});
+
