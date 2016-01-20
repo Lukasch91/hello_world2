@@ -4,7 +4,7 @@ $(document).ready(function () {
         method: 'GET'
     }).then(function (data) {
         for (i = 0; i <= data.length; i++) {
-            $("#main").append("<div><a href = hello_world2.html?albumid=" + data[i].id + ">" + data[i].title + "</a></div>")
+            $("#main").append("<table><tr><td>Album Nr."+ i +" </td><td><a href = hello_world2.html?albumid=" + data[i].id + ">" + data[i].title + "</a></td></tr></table>")
         }
     });
 });
